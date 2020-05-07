@@ -1,11 +1,11 @@
 var tab=document.getElementById("tab");
 var btn1=document.getElementById("au");
 var frm=document.getElementById("frm");
-function adduser()
+function adduser(e)
 {
     hide(btn1);
     var form=document.createElement("form");
-form.setAttribute("action","/add");
+form.setAttribute("action","/add/"+e);
 form.setAttribute("method","post");
 form.setAttribute("onSubmit","unhide(btn1);hide(frm);addTolist()");
 	var textname=document.createElement("input");

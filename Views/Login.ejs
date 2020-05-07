@@ -38,7 +38,9 @@ crossorigin="anonymous">
             id="password" placeholder="Password " minlength="8" required/><br> 
                               
             <br>
-            <center><input type="submit" id="submitDetails"  
+            <center>
+                <div><%- msg%></div>
+                <br><input type="submit" id="submitDetails"  
             name="submitDetails" value="Login" />
             <a href="register.html"><input type="button" id="registerbtn"  
             name="registerbtn" value="Register" /></a></center><br>    
@@ -53,5 +55,4 @@ crossorigin="anonymous">
     </div> 
     </div> 
 </body> 
-<script src="login.js" type="text/javascript"></script>
 </html>
